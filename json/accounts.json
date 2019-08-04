@@ -1,0 +1,22 @@
+[
+    {
+        "username": "admin",
+        "password": "admin123"
+    },
+    {
+        "username": "goblinSlayer",
+        "password": "goblin123"
+    },
+    {
+        "username": "priestess",
+        "password": "heal123"
+    },
+    {
+        "username": "highElf",
+        "password": "drunk123"
+    },
+    {
+        "username": "user",
+        "password": "user123"
+    }
+]
