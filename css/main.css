@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+
+:root{
+	--mainColor: #F96167;
+	--subColor: #FCE77D;
+}
+
+/* CSS STYLES FOR MAIN.HTML */
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	width: 100%;
+	height: 100%;
+    scroll-behavior: smooth;
+	overflow-x: hidden;
+}
+.container{
+    max-width: 1250px;
+    margin: 0 auto;
+}
+.flex-container {
+    display: flex;
+}
+.flex-container > div {
+    width: 100%;
+    height: 100vh;
+    padding: 10px;
+}
+.flex-container > div:nth-child(1){
+    width: 90%;
+}
+.flex-container > div:nth-child(2){
+    border-left: 1px solid #ECECEC;
+    border-right: 1px solid #ECECEC;
+    width: 200%;
+    padding: 0%;
+    height: auto;
+}
+.flex-container > div:nth-child(3){
+    width: 130%;
+}
+.leftBar h1{
+    cursor: pointer;
+	color: var(--mainColor);
+    font-family: Pacifico;
+    font-size: 30px;
+    margin-left: 25px;
+}
+.every-notif-bar{
+    list-style-type: none;
+    margin: 20px;
+    padding: 10px 25px;
+    border-radius: 20px;
+    display: flex;
+}
+.every-notif-bar i{
+    font-size: 20px;
+    color: #AB1B21;
+}
+.every-notif-bar li a{
+    text-decoration: none;
+    padding-left: 20px;
+    font-size: 20px;
+    font-family: Quicksand;
+    font-weight: 600;
+    color: #AB1B21;
+}
+@media only screen and (max-width: 768px){
+    .leftBar h1{
+        text-align: center;
+        font-size: 20px;
+        padding: 0;
+        margin: 0 0 10px 0;
+    }
+    .flex-container > div:nth-child(1){
+        width: auto;
+    }
+    .every-notif-bar{
+        padding: 0;
+        margin: 0;
+        margin-top: 20px;
+    }
+    .every-notif-bar i{
+        padding: 10px 20px;
+        font-size: 23px;
+    }
+    .every-notif-bar li a{
+        padding: 0;
+        margin: 0;
+        display: none;
+    }
+}
+.every-notif-bar:hover, .every-notif-bar#active{
+    cursor: pointer;
+    background: rgba(249, 97, 103, 0.39);
+}
+
+.small-header{
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid #ECECEC;
+}
+.small-header h2{
+    padding: 13px;
+    font-family: Quicksand;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    font-size: 18px;
+}
+.post{
+    width: 100%;
+    min-height: 160px;
+    background: #fff;
+    display: flex;
+    border-bottom: 1px solid #ECECEC;
+}
+@media only screen and (max-width: 768px){
+    .post{
+        display: none;
+    }
+}
+.post > div{
+    width: 100%;
+}
+.post > div:nth-child(2){
+    width: 500%;
+}
+.firstPart img{
+    margin-top: 20px;
+    margin-left: 30px;
+    width: 60px;
+}
+.secondPart textarea{
+    width: 100%;
+    margin-top: 15px;
+    height: 70px;
+    resize: none;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    border: none;
+    padding: 20px;
+    font-size: 20px;
+    font-family: Quicksand;
+}
+.secondPart textarea:focus{
+    outline: none;
+}
+.secondPart i{
+    font-size: 25px;
+    color: #E55359;
+    padding: 10px;
+    margin-left: 0px;
+    border-radius: 100%;
+}
+.secondPart i:hover{
+    cursor: pointer;
+    background: rgba(249, 97, 103, 0.39);
+    transition: all 0.2s linear;
+}
+.peach-button2{
+    float: right;
+    padding: 10px 20px;
+    border: none;
+    margin: 10px 20px;
+    font-family: Quicksand;
+    border-radius: 20px;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 400;
+    background: var(--mainColor);
+    outline: none;
+}
+.peach-button2:hover{
+    cursor: pointer;
+    background: #E55359;
+    transition: all 0.2s linear;
+}
+.news-feed{
+    width: 100%;
+    height: auto;
+    font-family: Quicksand;
+}
+.post-template{
+    width: 100%;
+    min-height: 50px;
+    background: #fff;
+    display: flex;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ECECEC;
+}
+.post-template > div{
+    width: 100%;
+}
+.post-template > div:nth-child(2){
+    width: 500%;
+}
+.posted-text h3{
+    margin: 25px 20px 0px 20px;
+}
+.posted-text p{
+    padding: 5px 20px;
+}
+.posted-text i{
+    font-size: 15px;
+    color: #E55359;
+    padding: 10px;
+    margin-left: 10px;
+    border-radius: 100%;
+}
+.posted-text i:hover{
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+.posted-text i:nth-child(3):hover{color: #3399FF;background: rgba(51, 153, 255, 0.39);}
+.posted-text i:nth-child(4):hover{color: #039823;background: rgba(0, 255, 54, 0.39);}
+.posted-text i:nth-child(5):hover{background: rgba(249, 97, 103, 0.39);}
+.posted-text i:nth-child(6):hover{color: #3399FF;background: rgba(51, 153, 255, 0.39);}
+.rightBar{
+    text-align: center;
+    margin: 0px 20px;
+}
+@media only screen and (max-width: 940px){
+    .rightBar{
+        display: none;
+    }
+}
+.search-bar{
+    display: block;
+    margin: auto;
+}
+.search-bar button{
+    padding: 10px;
+    border: none;
+    outline: none;
+    background: none;
+    color: #AB1B21;
+    border-radius: 20px;
+    margin: 3px 0px 0px 13px;
+    position: absolute;
+}
+.search-bar input{
+    padding: 10px 50px;
+    width: 100%;
+    border: none;
+    font-family: Quicksand;
+    font-size: 15px;
+    border-radius: 50px;
+    outline: none;
+    background: rgba(255, 108, 114, 0.19);
+}
+.search-bar input::placeholder{
+    color: #AB1B21;
+}
+.trend-bar{
+    width: 100%;
+    min-height: 200px;
+    font-family: Quicksand;
+    font-size: 15px;
+    border-radius: 20px;
+    margin-top: 15px;
+    text-align: left;
+    background: rgba(255, 108, 114, 0.19);
+}
+.trend-bar h4{
+    padding: 20px;
+    font-size: 20px;
+    color: #AB1B21;
+    border-bottom: 1px solid #FFBCBF;
+}
+.every-trend{
+    width: 100%;
+    min-height: 70px;
+    padding: 10px;
+    border-bottom: 1px solid #FFBCBF;
+}
+.every-trend p{
+    color: #B42B30;
+}
+.every-trend:nth-child(5){
+    border: none;
+    padding: 20px;
+    color: #AB1B21;
+    min-height: 10px;
+}
+.every-trend:hover{
+    background: #FFCECF;
+    cursor: pointer;
+}
+.every-trend:nth-child(5):hover{
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+/* CSS STYLES FOR EXPLORE.HTML */

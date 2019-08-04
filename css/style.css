@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+
+:root{
+	--mainColor: #F96167;
+	--subColor: #FCE77D;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	width: 100%;
+	height: 100%;
+	background: #EEEEEE;
+	overflow-x: hidden;
+	transition: all 0.2s linear;
+}
+header{
+	width: 100%;
+	min-height: 80px;
+	padding: 10px;
+	background: #fff;
+	box-shadow: 0 1px 6px rgba(57,73,76,0.35);
+}
+header h1{
+	cursor: pointer;
+	color: var(--mainColor);
+	font-family: Pacifico;
+	margin: 0px 160px;
+	float: left;
+}
+section{
+	width: 510px;
+	position: relative;
+	height: 459px;
+	padding: 30px 30px 0px;
+	padding-bottom: 30px;
+	margin: 60px auto;
+	background: #fff;
+	text-align: center;
+	box-shadow: 0 1px 6px rgba(57,73,76,0.35);
+}
+section h2{
+	font-family: Quicksand;
+	letter-spacing: 2px;
+	padding: 20px 0px 45px 0px;
+}
+.username, .password{
+	width: 80%;
+	padding: 10px;
+	font-size: 14px;
+	border-radius: 3px;
+	letter-spacing: 1px;
+	border: 1px solid #DDDDDD;
+	font-family: Quicksand;
+	margin-bottom: 30px;
+}
+.username:focus, .username:hover, .password:focus, .password:hover{
+	outline: none;
+	border: 1px solid var(--mainColor);
+	transition: all 0.2s linear;
+	box-shadow: inset 0 1px 7px rgba(57,73,76,0.35);
+}
+.continueBtn, .logBtn{
+	width: 50%;
+	height: 40px;
+	border: none;
+	font-size: 15px;
+	font-family: Quicksand;
+	letter-spacing: 1px;
+	font-weight: bold;
+	color: #fff;
+	border-radius: 2px;
+	background: #DB4147;
+}
+.continueBtn:hover, .logBtn:hover{
+	cursor: pointer;
+	transition: all 0.2s linear;
+	background: #BD2E34;
+	box-shadow: 0 1px 9px rgba(57,73,76,0.35);
+}
+.signUp{
+	width: 100%;
+	height: 159px;
+	margin: 0 -30px;
+	padding: 0 30px;
+	bottom: 0;
+	border-top: 1px solid #DBDBDB;
+	position: absolute;
+	background: #F9F9F9;
+}
+.signUp h3{
+	font-family: Quicksand;
+	font-size: 15px;
+	color: #656565;
+	font-weight: 300;
+	letter-spacing: 1px;
+	padding: 30px 0px 20px 0px;
+}
+.signBtn{
+	width: 218px;
+	height: 40px;
+	border: none;
+	font-family: Quicksand;
+	letter-spacing: 1px;
+	font-weight: bold;
+	color: var(--mainColor);
+	border-radius: 2px;
+	background: #fff;
+	outline: none;
+	box-shadow: 0 1px 9px rgba(57,73,76,0.35)
+}
+.signBtn:hover{
+	cursor: pointer;
+	transition: all 0.2s linear;
+	color: #BD2E34;
+	box-shadow: 0 1px 13px rgba(57,73,76,0.75);
+}
+footer{
+	width: 100%;
+	height: 135px;
+	padding-bottom: 30px;
+	text-align: center;
+	font-family: Quicksand;
+	background: #222222;
+	box-sizing: border-box;
+}
+footer h4{
+	color: #E0E0E0;
+	padding-top: 30px;
+	letter-spacing: 1px;
+	font-weight: 400;
+}
+footer a{
+	text-decoration: none;
+	color: #656565;
+	font-weight: 600;
+	font-size: 15px;
+}
+section:nth-child(3){
+	display: none;
+}
+section:nth-child(3) h2{
+	padding: 20px 0px 20px 0px;
+}
+section:nth-child(3) p{
+	color: #222222;
+	padding-bottom: 30px;
+	font-family: Quicksand;
+	letter-spacing: 1px;
+}
+.alert{
+	font-family: Quicksand;
+	color: var(--mainColor);
+	margin-bottom: 20px;
+	font-weight: 600;
+}
+@media only screen and (max-width: 768px) {
+	section{
+		width: 100%;
+		padding: 20px;
+		margin: 0px 0px;
+		box-shadow: inset 0 1px 6px rgba(57,73,76,0.35);
+	}
+	section:nth-child(3){
+		padding-bottom:50%;
+	}
+	.continueBtn, .signBtn{
+		width: 100%;
+	}
+}
+.alreadyAccount{
+	float: right;
+	margin: 25px 160px;
+	font-family: Quicksand;
+	font-size: 13px;
+	letter-spacing: 1px;
+	font-weight: 600;
+}
+.alreadyAccount span{
+	color: #DB4147;
+	cursor: pointer;
+}
+.alreadyAccount span:hover{
+	text-decoration: underline;
+}
+@media only screen and (max-width: 768px){
+	.alreadyAccount{
+		float: none;
+		margin: 70px 0px 10px 0px;
+		text-align: center;
+	}
+}
+.usernameSign, .passwordSign, .passwordSign2{
+	width: 80%;
+	padding: 10px;
+	font-size: 14px;
+	border-radius: 3px;
+	letter-spacing: 1px;
+	border: 1px solid #DDDDDD;
+	font-family: Quicksand;
+	margin-bottom: 30px;
+}
+.usernameSign:hover, .usernameSign:focus ,.passwordSign:hover, .passwordSign:focus, .passwordSign2:hover, .passwordSign2:focus{
+	outline: none;
+	border: 1px solid var(--mainColor);
+	transition: all 0.2s linear;
+	box-shadow: inset 0 1px 7px rgba(57,73,76,0.35);
+}
+.signMeUpBtn{
+	width: 50%;
+	height: 40px;
+	border: none;
+	font-size: 15px;
+	font-family: Quicksand;
+	letter-spacing: 1px;
+	font-weight: bold;
+	color: #fff;
+	outline: none;
+	border-radius: 2px;
+	background: #DB4147;
+}
+.signMeUpBtn:hover{
+	cursor: pointer;
+	transition: all 0.2s linear;
+	background: #BD2E34;
+	box-shadow: 0 1px 9px rgba(57,73,76,0.35);
+}
